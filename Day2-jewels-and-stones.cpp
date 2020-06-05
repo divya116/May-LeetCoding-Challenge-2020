@@ -5,12 +5,12 @@ public:
         unordered_set<char> jewels;
         for (auto i:J)
             jewels.insert(i);
-        int nojewels=0;
+        int numJewels=0;
         for (auto i:S)
         {
             if (jewels.find(i)!=jewels.end())
-                nojewels++;
+                numJewels++;
         }
-        return nojewels;
+        return numJewels;
     }
 };
